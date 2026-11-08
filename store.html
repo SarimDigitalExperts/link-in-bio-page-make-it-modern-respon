@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Programs & Gear | Alex Vance</title>
+  <meta name="description" content="Shop cricket workout programs, batting video masterclasses, match nutrition guides, and gear recommendations by Alex Vance.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+  </div>
+
+  <div class="app-container">
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <a href="index.html" class="brand-badge">
+          <i data-lucide="arrow-left"></i> Back to Bio
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="brand-badge" style="color: var(--accent-primary);">
+          Alex Vance Store 🏏
+        </span>
+      </div>
+    </header>
+
+    <main id="main-content" style="display: flex; flex-direction: column; gap: 16px; margin-top: 10px;">
+      <section class="profile-card" style="padding: 24px; text-align: left;">
+        <span style="font-size: 0.75rem; font-weight: 800; color: var(--accent-primary); text-transform: uppercase;">Performance Programs</span>
+        <h1 style="font-size: 1.5rem; font-weight: 800; margin-top: 4px; margin-bottom: 6px;">Cricket Workout Plans & Training Digital Assets</h1>
+        <p style="color: var(--text-muted); font-size: 0.875rem;">
+          Take your game to the professional level with tested gym routines, stroke mechanics, and match preparation guides.
+        </p>
+      </section>
+
+      <!-- Store Bento Grid -->
+      <section class="bento-grid">
+        
+        <div class="bento-card bento-card-full">
+          <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=600&q=80" alt="Batting Masterclass" class="bento-media">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+              <div class="bento-price">$49 USD</div>
+              <h2 class="bento-title">Elite Batting Masterclass Series</h2>
+            </div>
+            <span class="click-counter-badge" style="display: inline-block;">BESTSELLER</span>
+          </div>
+          <p class="bento-desc">Includes 12 video modules: front-foot defense, spin technique, power-hitting stance & boundary drill routines.</p>
+          <button class="btn-primary" onclick="confetti(); showToast('Enrolled in Batting Masterclass! 🏆');">
+            <i data-lucide="shopping-bag"></i> Enroll Now ($49)
+          </button>
+        </div>
+
+        <div class="bento-card">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" alt="Gym Workout Plan" class="bento-media">
+          <div class="bento-price">$29 USD</div>
+          <h2 class="bento-title">Pace & Power Gym Plan</h2>
+          <p class="bento-desc">12-week off-season resistance and rotational core strength routine.</p>
+          <button class="btn-primary" onclick="confetti(); showToast('Added Pace Gym Plan! 🏋️');">
+            <i data-lucide="shopping-bag"></i> Buy ($29)
+          </button>
+        </div>
+
+        <div class="bento-card">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=300&q=80" alt="Nutrition Guide" class="bento-media">
+          <div class="bento-price">$19 USD</div>
+          <h2 class="bento-title">Match Day Fuel Blueprint</h2>
+          <p class="bento-desc">High-stamina meal recipes, intra-innings hydration, and rapid recovery tips.</p>
+          <button class="btn-primary" onclick="confetti(); showToast('Added Nutrition Guide! 🥑');">
+            <i data-lucide="shopping-bag"></i> Buy ($19)
+          </button>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>© 2025 Alex Vance Cricket. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Bio Links</a>
+        <a href="store.html">Shop</a>
+        <a href="about.html">About</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">
+    <i data-lucide="check"></i>
+    <span class="toast-msg">Item added!</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

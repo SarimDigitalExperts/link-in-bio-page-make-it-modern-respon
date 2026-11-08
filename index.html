@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Vance | Professional Cricketer & Performance Coach</title>
+  <meta name="description" content="Official link-in-bio page for Alex Vance. 1:1 cricket coaching, workout programs, technique masterclasses, and match gear.">
+  
+  <meta property="og:title" content="Cricket With Alex Vance | Pro Cricketer & Coach">
+  <meta property="og:description" content="Helping aspiring cricketers build explosive power, master batting & bowling techniques, and build a winning mindset.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon via Data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏏</text></svg>">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Ambient Dark Green Turf Glow Background -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+  </div>
+
+  <div class="app-container">
+
+    <!-- Top Utility Header Navigation -->
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <a href="index.html" class="brand-badge">
+          <i data-lucide="trophy"></i> Powered By CreatorsAlliance.io
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <button class="analytics-toggle-btn" id="analytics-toggle" title="Toggle Stats">
+          <i data-lucide="bar-chart-2"></i> Stats
+        </button>
+        <button class="icon-btn" data-open-modal="theme-modal" aria-label="Change Theme">
+          <i data-lucide="palette"></i>
+        </button>
+        <button class="icon-btn" data-open-modal="share-modal" aria-label="Share Profile">
+          <i data-lucide="share-2"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Creator Live Analytics Panel -->
+    <aside class="analytics-drawer" id="analytics-panel" aria-label="Player Analytics">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.85rem; font-weight: 800; color: var(--accent-primary); display: flex; align-items: center; gap: 6px;">
+          <i data-lucide="activity"></i> Real-time Creator Stats
+        </span>
+        <span style="font-size: 0.75rem; color: var(--text-subtle);">Live</span>
+      </div>
+      <div class="analytics-grid">
+        <div class="analytic-stat">
+          <div class="analytic-number" id="stat-views">28,451</div>
+          <div class="analytic-label">Profile Views</div>
+        </div>
+        <div class="analytic-stat">
+          <div class="analytic-number" id="stat-clicks">9,660</div>
+          <div class="analytic-label">Link Clicks</div>
+        </div>
+        <div class="analytic-stat">
+          <div class="analytic-number" id="stat-ctr">33.9%</div>
+          <div class="analytic-label">CTR</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Profile Header (Aesthetic directly aligned with image.png) -->
+    <main id="main-content">
+      <section class="profile-card">
+        <div class="avatar-wrapper">
+          <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=400&q=80" alt="Hamza Jamil Athlete" class="avatar-img" width="108" height="108">
+        </div>
+        <div class="profile-info">
+          <div class="profile-name-row">
+            <h1 class="profile-name">Sarim Asim</h1>
+            <span class="verified-icon" title="Verified Athlete">
+              <i data-lucide="check"></i>
+            </span>
+          </div>
+          <span class="profile-handle">Founder of Creators Alliance</span>
+          <p class="profile-bio">
+            Helping you build a stronger body, master elite cricket technique, and cultivate a winning match mindset.
+          </p>
+
+          <!-- Circular Social Media Icons Bar (Matches attached reference) -->
+          <div class="social-icons-bar">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="TikTok">
+              <i data-lucide="music-2"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+              <i data-lucide="youtube"></i>
+            </a>
+            <a href="mailto:coaching@alexvancecricket.com" class="social-icon-btn" aria-label="Email Contact">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Tabs (Links, Coaching & Programs, Career Stats) -->
+      <nav class="tab-nav" style="margin-top: 16px;">
+        <button class="tab-btn active" data-tab="links">
+          <i data-lucide="link"></i> Coaching Links
+        </button>
+        <button class="tab-btn" data-tab="shop">
+          <i data-lucide="shopping-bag"></i> Programs & Shop
+        </button>
+        <button class="tab-btn" data-tab="about">
+          <i data-lucide="award"></i> About
+        </button>
+      </nav>
+
+      <!-- TAB 1: MAIN LINK CARDS -->
+      <div class="tab-content active" id="tab-links" style="margin-top: 16px;">
+        
+        <div class="link-list">
+          
+          <!-- FEATURED LINK CARD (Vibrant Green highlighted background like "Online Coaching" in reference image) -->
+          <a href="#" class="link-card link-card-featured" data-open-modal="booking-modal" data-link-id="link-1">
+            <div class="link-card-icon">
+              <i data-lucide="dumbbell"></i>
+            </div>
+            <div class="link-card-content">
+              <div class="link-card-title">
+                1:1 Online Coaching
+                <span class="click-counter-badge">3,240 clicks</span>
+              </div>
+              <p class="link-card-subtitle">Personalized video analysis, batting/bowling plans & 1-on-1 guidance</p>
+            </div>
+            <div class="link-card-arrow">
+              <i data-lucide="chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- LINK 2: WORKOUT PROGRAMS -->
+          <a href="store.html" class="link-card" data-link-id="link-2">
+            <div class="link-card-icon">
+              <i data-lucide="activity"></i>
+            </div>
+            <div class="link-card-content">
+              <div class="link-card-title">
+                Cricket Workout Programs
+                <span class="click-counter-badge">1,890 clicks</span>
+              </div>
+              <p class="link-card-subtitle">Gym strength, explosive speed & match-day stamina routines</p>
+            </div>
+            <div class="link-card-arrow">
+              <i data-lucide="chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- LINK 3: NUTRITION & MEAL PLANS -->
+          <a href="store.html" class="link-card" data-link-id="link-3">
+            <div class="link-card-icon">
+              <i data-lucide="apple"></i>
+            </div>
+            <div class="link-card-content">
+              <div class="link-card-title">
+                Match Day Nutrition & Meal Plans
+                <span class="click-counter-badge">2,100 clicks</span>
+              </div>
+              <p class="link-card-subtitle">Hydration protocols & high-performance meal guides for match days</p>
+            </div>
+            <div class="link-card-arrow">
+              <i data-lucide="chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- LINK 4: FREE RESOURCES -->
+          <a href="#" class="link-card" onclick="event.preventDefault(); showToast('Downloading Free 10-Drill Cricket PDF... 📄');" data-link-id="link-4">
+            <div class="link-card-icon">
+              <i data-lucide="gift"></i>
+            </div>
+            <div class="link-card-content">
+              <div class="link-card-title">
+                Free Resources & Drills PDF
+                <span class="click-counter-badge">1,450 clicks</span>
+              </div>
+              <p class="link-card-subtitle">Essential solo batting & pace bowling checklists and ebooks</p>
+            </div>
+            <div class="link-card-arrow">
+              <i data-lucide="chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- LINK 5: MY FAVORITE GEAR -->
+          <a href="store.html" class="link-card" data-link-id="link-5">
+            <div class="link-card-icon">
+              <i data-lucide="heart"></i>
+            </div>
+            <div class="link-card-content">
+              <div class="link-card-title">
+                My Favorites & Match Gear
+                <span class="click-counter-badge">980 clicks</span>
+              </div>
+              <p class="link-card-subtitle">Bats, footwear, supplements & recovery gear I personally recommend</p>
+            </div>
+            <div class="link-card-arrow">
+              <i data-lucide="chevron-right"></i>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Newsletter Subscription Card (Matches reference card) -->
+        <div class="newsletter-card" style="margin-top: 8px;">
+          <div class="newsletter-header-center">
+            <div class="newsletter-leaf-icon">
+              <i data-lucide="sprout" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3>Join my newsletter</h3>
+            <p>Get weekly cricket technique tips, fitness advice & motivation</p>
+          </div>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- TAB 2: SHOP & COACHING BENTO -->
+      <div class="tab-content" id="tab-shop" style="margin-top: 16px;">
+        <div class="bento-grid">
+          
+          <div class="bento-card bento-card-full">
+            <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=600&q=80" alt="Masterclass Training" class="bento-media">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <div>
+                <div class="bento-price">$49 USD</div>
+                <h3 class="bento-title">Elite Batting Technique Masterclass</h3>
+              </div>
+            </div>
+            <p class="bento-desc">Full 12-module HD video guide covering shot selection, power hitting mechanics, and spin pitch footwork.</p>
+            <a href="store.html" class="btn-primary">
+              <i data-lucide="shopping-bag"></i> View & Enroll ($49)
+            </a>
+          </div>
+
+          <div class="bento-card">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=300&q=80" alt="Pace & Power Gym Plan" class="bento-media">
+            <div class="bento-price">$29 USD</div>
+            <h3 class="bento-title">Pace & Power Gym Plan</h3>
+            <p class="bento-desc">12-week off-season resistance program tailored specifically for fast bowlers and power hitters.</p>
+            <button class="btn-secondary" onclick="showToast('Added Pace Gym Plan to cart! 🏋️')">
+              <i data-lucide="plus"></i> Quick Buy
+            </button>
+          </div>
+
+          <div class="bento-card">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=300&q=80" alt="Cricket Match Nutrition" class="bento-media">
+            <div class="bento-price">$19 USD</div>
+            <h3 class="bento-title">Match Day Fuel Blueprint</h3>
+            <p class="bento-desc">Custom fueling schedule, hydration recipes, and recovery meals for 2-day & T20 matches.</p>
+            <button class="btn-secondary" onclick="showToast('Added Nutrition Guide! 🥑')">
+              <i data-lucide="plus"></i> Quick Buy
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB 3: ABOUT & CAREER STATS -->
+      <div class="tab-content" id="tab-about" style="margin-top: 16px;">
+        <div class="bento-card bento-card-full" style="padding: 24px;">
+          <h2 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <i data-lucide="trophy" style="color: var(--accent-primary);"></i> About Alex Vance
+          </h2>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">
+            Alex Vance is a First-Class professional cricketer and ECB Level 3 performance coach. Having played T20 leagues worldwide and mentored over 5,000+ young athletes, Alex simplifies high-level cricket coaching into actionable daily drills and fitness systems.
+          </p>
+
+          <h3 style="font-size: 0.95rem; font-weight: 800; margin-bottom: 10px; color: var(--accent-primary);">🏏 Career Highlights</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+            <li style="display: flex; justify-content: space-between; font-size: 0.875rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 6px;">
+              <span style="color: var(--text-muted);">First-Class Runs / Wickets</span>
+              <strong style="color: var(--text-main);">4,820 runs | 165 wkts</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-size: 0.875rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 6px;">
+              <span style="color: var(--text-muted);">Athletes Mentored</span>
+              <strong style="color: var(--text-main);">5,000+ globally</strong>
+            </li>
+            <li style="display: flex; justify-content: space-between; font-size: 0.875rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 6px;">
+              <span style="color: var(--text-muted);">Official Brand Sponsors</span>
+              <strong style="color: var(--text-main);">Kookaburra, Oakley, GM</strong>
+            </li>
+          </ul>
+
+          <a href="about.html" class="btn-primary">
+            <i data-lucide="file-text"></i> View Full Media & Press Kit
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer (Exact text style from reference image) -->
+    <footer class="app-footer">
+      <p style="font-size: 0.8rem; color: var(--text-muted);">
+        
+        Made with <span style="color: var(--accent-primary);">💚</span> by SarimAsim.Official
+      </p>
+      <p style="font-size: 0.75rem; color: var(--text-subtle);">
+        
+        © 2024 - 2026 All rights reserved
+      
+      </p>
+      <div class="footer-links" style="margin-top: 4px;">
+        <a href="index.html">Home</a>
+        <a href="store.html">Shop</a>
+        <a href="about.html">About & Press</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- MODALS SYSTEM -->
+
+  <!-- Theme Drawer Modal -->
+  <div class="modal-overlay" id="theme-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <h3 class="modal-title"><i data-lucide="palette"></i> Theme Preferences</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">Select page display mode.</p>
+
+      <div class="theme-options">
+        <div class="theme-card active" data-theme-val="dark">
+          <div class="theme-preview-dots">
+            <span class="theme-dot" style="background: #4ade80;"></span>
+            <span class="theme-dot" style="background: #22c55e;"></span>
+            <span class="theme-dot" style="background: #090e0b;"></span>
+          </div>
+          <div class="theme-card-name">Turf Dark</div>
+        </div>
+
+        <div class="theme-card" data-theme-val="light">
+          <div class="theme-preview-dots">
+            <span class="theme-dot" style="background: #16a34a;"></span>
+            <span class="theme-dot" style="background: #15803d;"></span>
+            <span class="theme-dot" style="background: #ffffff;"></span>
+          </div>
+          <div class="theme-card-name">Cricket Light</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Share Profile Modal -->
+  <div class="modal-overlay" id="share-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <h3 class="modal-title"><i data-lucide="share-2"></i> Share Bio Link</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">Scan QR code or copy bio link.</p>
+
+      <div class="qr-container">
+        <div class="qr-code-box">
+          <svg width="140" height="140" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="white"/>
+            <rect x="10" y="10" width="25" height="25" fill="#090e0b"/>
+            <rect x="15" y="15" width="15" height="15" fill="white"/>
+            <rect x="18" y="18" width="9" height="9" fill="#22c55e"/>
+            
+            <rect x="65" y="10" width="25" height="25" fill="#090e0b"/>
+            <rect x="70" y="15" width="15" height="15" fill="white"/>
+            <rect x="73" y="18" width="9" height="9" fill="#22c55e"/>
+            
+            <rect x="10" y="65" width="25" height="25" fill="#090e0b"/>
+            <rect x="15" y="70" width="15" height="15" fill="white"/>
+            <rect x="18" y="73" width="9" height="9" fill="#22c55e"/>
+
+            <rect x="42" y="12" width="10" height="10" fill="#090e0b"/>
+            <rect x="42" y="42" width="16" height="16" fill="#22c55e"/>
+            <rect x="65" y="42" width="10" height="20" fill="#090e0b"/>
+            <rect x="42" y="65" width="12" height="12" fill="#090e0b"/>
+            <rect x="65" y="68" width="20" height="20" fill="#22c55e"/>
+          </svg>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-subtle); margin-bottom: 16px;">Scan to open on mobile phone</p>
+        <button class="btn-primary" onclick="copyToClipboard(window.location.href, 'Bio URL copied! 🏏')">
+          <i data-lucide="copy"></i> Copy Link
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calendar 1:1 Coaching Booking Modal -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <h3 class="modal-title"><i data-lucide="video"></i> Book 1:1 Cricket Coaching</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">45-Minute 1-on-1 Zoom video stroke analysis & training roadmap.</p>
+
+      <form id="booking-form" onsubmit="event.preventDefault(); showToast('Coaching request submitted! Check your inbox. 🏏'); closeModal('booking-modal');">
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+          <div>
+            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">Full Name</label>
+            <input type="text" required class="newsletter-input" style="width: 100%;" placeholder="e.g. Sam Morgan">
+          </div>
+          <div>
+            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">Email Address</label>
+            <input type="email" required class="newsletter-input" style="width: 100%;" placeholder="sam@example.com">
+          </div>
+          <div>
+            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">Coaching Primary Focus</label>
+            <select class="newsletter-input" style="width: 100%;">
+              <option>Batting Mechanics & Power Hitting</option>
+              <option>Pace / Spin Bowling Action Review</option>
+              <option>Match Mindset & Fitness Program</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary">
+          <i data-lucide="check"></i> Request Session ($85 USD)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Bar -->
+  <div class="toast" id="toast">
+    <i data-lucide="sparkles"></i>
+    <span class="toast-msg">Action completed!</span>
+  </div>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

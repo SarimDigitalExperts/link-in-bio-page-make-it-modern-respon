@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Press Kit | Alex Vance Cricket</title>
+  <meta name="description" content="Learn about First-Class cricketer Alex Vance, career stats, brand partnerships, and media kit details.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+  </div>
+
+  <div class="app-container">
+    <header class="top-bar">
+      <div class="top-bar-left">
+        <a href="index.html" class="brand-badge">
+          <i data-lucide="arrow-left"></i> Back to Bio
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="brand-badge" style="color: var(--accent-primary);">
+          Media Kit 2025
+        </span>
+      </div>
+    </header>
+
+    <main id="main-content" style="display: flex; flex-direction: column; gap: 16px; margin-top: 10px;">
+      
+      <section class="profile-card" style="padding: 24px; text-align: left;">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+          <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=300&q=80" alt="Alex Vance Profile" style="width: 64px; height: 64px; border-radius: 50%; border: 3px solid var(--accent-primary);">
+          <div>
+            <h1 style="font-size: 1.35rem; font-weight: 800;">Alex Vance</h1>
+            <p style="color: var(--accent-primary); font-size: 0.85rem; font-weight: 700;">First-Class Cricketer & Coach</p>
+          </div>
+        </div>
+        
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px;">
+          Alex Vance brings 12+ years of professional First-Class and Franchise T20 cricket experience directly to passionate athletes. Through daily coaching, digital guides, and athletic conditioning programs, Alex reaches over 120,000+ cricket followers globally.
+        </p>
+
+        <button class="btn-primary" onclick="showToast('Downloading Alex_Vance_Press_Kit.pdf 📄')">
+          <i data-lucide="download"></i> Download Sponsorship PDF
+        </button>
+      </section>
+
+      <!-- Sponsorship Inquiry Form -->
+      <section class="newsletter-card">
+        <h2 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 4px;">Brand Collaboration Inquiry</h2>
+        <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 14px;">Inquire about gear sponsorships, coaching clinics, or digital promotions.</p>
+        
+        <form onsubmit="event.preventDefault(); showToast('Inquiry received! We will respond within 24h. 🏏'); this.reset();">
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px;">
+            <input type="text" required placeholder="Company or Brand Name" class="newsletter-input">
+            <input type="email" required placeholder="Contact Email" class="newsletter-input">
+            <textarea required placeholder="Project details or brand proposal..." class="newsletter-input" style="height: 80px; resize: none; border-radius: 14px;"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">
+            <i data-lucide="send"></i> Submit Collaboration Request
+          </button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <p>© 2025 Alex Vance. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Bio Links</a>
+        <a href="store.html">Shop</a>
+        <a href="about.html">About & Press</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">
+    <i data-lucide="sparkles"></i>
+    <span class="toast-msg">Notification</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
